@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dropdown Demo</h1>
+        <p>Nhấp để mở dropdown, sử dụng phím mũi tên để điều hướng, Enter để chọn</p>
+
+        <div class="dropdown" id="dropdown">
+            <button class="dropdown-toggle" id="dropdownToggle">
+                Chọn một tùy chọn
+                <span class="arrow">▼</span>
+            </button>
+
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li class="dropdown-item">
+                    <a href="#" data-value="option1">Tùy chọn 1</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" data-value="option2">Tùy chọn 2</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" data-value="option3">Tùy chọn 3</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" data-value="option4">Tùy chọn 4</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" data-value="option5">Tùy chọn 5</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="result">
+            <p>Lựa chọn hiện tại: <span id="selectedOption">Chưa chọn</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
